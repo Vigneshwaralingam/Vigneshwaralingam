@@ -1,0 +1,20 @@
+def remove_vowels(input_string):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    result = ""
+    for char in input_string:
+        if char.lower() not in vowels:
+            result += char
+    return result
+
+
+# Example usage
+input_string = "Hello, World!"
+result = remove_vowels(input_string)
+print("Input string:", input_string)
+print("String with vowels removed:", result)
+
+
+#output 
+
+Input string: Hello, World!
+String with vowels removed: Hll, Wrld!
